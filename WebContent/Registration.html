@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Css.css">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+<div class="title">
+<h1 align="center">Common Qualities</h1>
+</div>
+<nav>
+<a href="Front.html">HOME</a>
+<a href="#">GAMES</a>
+<a href="Registration.html">USER ACCESS</a>
+<a href="#">ABOUT</a>
+<a href="ContactUs.html">CONTACT US</a>
+</nav>
+</header>
+<div id="content">
+<div class="loginf">
+<img alt="" src="Crystal_Clear_app_Login_Manager_2.png"><br></br>
+<b>User Login:</b><br><br/> 
+<form action="servlet/HomeServ" method="Post" onsubmit=" return myFunction()" >
+Username:  
+<input type="email" name="email" id="email"/><br><br/>  
+Password:
+<input type="password" name="password" id="pwd"><br><br/>
+<input type="submit" value="Login"/>
+</form>
+</div>
+<div class="loginf">
+<img alt="" src="Crystal_Clear_app_Login_Manager_2.png"><br></br>
+<b>User Sign Up:</b><br><br/> 
+<form action="servlet/HomeServ" method="Post" onsubmit=" return myFunction()" >
+Username:  
+<input type="text" name="uname" id="uname"/><br><br/>  
+First Name:  
+<input type="text" name="fname" id="fname"/><br><br/>  
+Last Name:  
+<input type="text" name="lname" id="lname"/><br><br/> 
+Your Email:  
+<input type="email" name="email" id="email"/><br><br/>   
+Re-enter Email:  
+<input type="email" name="remail" id="remail"/><br><br/>   
+Password:
+<input type="password" name="password" id="pwd"><br><br/>
+I am: <table><tr>
+<td><select><option value='op'>Select Options</option>
+<option value='male'>Male</option>
+<option value='Female'>Female</option>
+<option value='dk'>Don't Know</option></select><br><br></td></tr></table>
+Birthday:
+<input id="date" type="date" value="2017-06-01"><br><br>
+<input type="submit" value="Sign Up"/>
+</form>
+</div>
+<footer>
+<p>Copyright &copy; 2017. All Rights Reserved.</p>
+</footer>
+
+</div>
+</body>
+</html>

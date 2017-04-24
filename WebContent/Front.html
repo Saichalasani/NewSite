@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>All is well</title>
+<link rel="stylesheet" href="Css.css">
+</head>
+<body background="Yosmite.jpg">
+<header>
+<div class="title">
+<h1 align="center">Common Qualities</h1>
+</div>
+<nav>
+<a href="Front.html">HOME</a>
+<a href="#">GAMES</a>
+<a href="Registration.html">USER ACCESS</a>
+<a href="#">ABOUT</a>
+<a href="ContactUs.html">CONTACT US</a>
+</nav>
+</header>
+<div id="content">
+<div class="user" >
+<form action="servlet/HomeServ" method="Post" onsubmit=" return myFunction()" >  
+Enter Your Name:<br>
+<input type="text" name="user" id="txt"/><br><br/>  
+<input type="submit" value="Submit"/>
+</form>
+</div>
+<div>
+<img src="terry-2x.gif" alt="This will display an animated GIF" />
+</div>
+<script>
+function myFunction() {
+	var x= document.getElementById("txt").value;
+	if(x=="")
+	{
+		alert("Please enter your name");
+		return false;
+	}
+	else{
+		 window.location("Signup.html");
+		
+	}
+   
+}
+</script>
+
+<footer>
+<p>Copyright &copy; 2017. All Rights Reserved.</p>
+</footer>
+</div>
+</body>
+</html>
